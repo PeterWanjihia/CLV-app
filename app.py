@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import joblib
 
+
 # Load the trained models and feature importance
 xgb_reg_model = joblib.load('artifacts/xgb_reg_model.pkl')
 xgb_clf_model = joblib.load('artifacts/xgb_clf_model.pkl')
@@ -17,7 +18,9 @@ app = dash.Dash(__name__)
 # Define the layout of the app
 app.layout = html.Div(
     children=[
-        html.H1("Customer Lifetime Value Model", style={"text-align": "center"}),
+        # html.H1("Customer Lifetime Value Model", style={"text-align": "center"}),
+        html.H1("Customer Lifetime Value Model", style={"textAlign": "center"}),
+
         html.Div(
             children=[
                 html.H3("Enter Customer Features:"),
