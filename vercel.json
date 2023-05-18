@@ -11,5 +11,11 @@
       "src": "/(.*)",
       "dest": "./Charles/app.py"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/Charles/app.py"
+    }
   ]
 }
